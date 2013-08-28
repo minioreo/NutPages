@@ -271,6 +271,16 @@ img {
   max-width: 100%
 }
 </style>
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 <h1>移动端常用元素</h1>
@@ -295,6 +305,9 @@ img {
 <li>
 <p>属性:无</p>
 </li>
+<li>
+  <img src="actionbar.png" />
+</li>
 </ul>
 <hr />
 <h3>Tab Nav</h3>
@@ -314,6 +327,9 @@ img {
 </li>
 <li>
 <p>属性：无</p>
+</li>
+<li>
+  <img src="tab.png">
 </li>
 </ul>
 <hr />
@@ -357,6 +373,13 @@ img {
 <li>data-type:横向/纵向</li>
 </ul>
 </li>
+<li>
+  <div class="btn-group">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+</div>
+</li>
 </ul>
 <hr />
 <h3>Collapsibles</h3>
@@ -377,6 +400,21 @@ img {
 <li>data-toggle:是否折叠</li>
 </ul>
 </li>
+<li>
+   <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" href="#collapseOne" style="cursor:pointer;">
+          标题（点击可折叠或展开内容)
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        内容区域<br/>
+        test
+      </div>
+    </div>
+  </div>
+</li>
 </ul>
 <hr />
 <h3>Panel</h3>
@@ -395,11 +433,17 @@ Panel content
 
 </li>
 <li>
-<p>属性</p>
-<ul>
-<li>data-collapsed-icon：分组折叠时的图标</li>
-<li>data-expanded-icon：分组展开时的图标</li>
-</ul>
+<p>属性:无</p>
+</li>
+<li>
+  <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
 </li>
 </ul>
 <hr />
@@ -433,6 +477,35 @@ Panel content
 
 </li>
 <li>属性：无</li>
+<li>
+  <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">这是一个表单：</h3>
+  </div>
+  <div class="panel-body">
+    <form role="form">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
+</li>
 </ul>
 <hr />
 <h2>页面元素</h2>
@@ -456,6 +529,9 @@ Panel content
 <li>一些预设的样式，用于表示输入框状态，如success，error，warning等</li>
 </ul>
 </li>
+<li>
+<input type="text" class="form-control" placeholder="Text input">
+</li>
 </ul>
 <hr />
 <h3>CheckBox</h3>
@@ -472,6 +548,9 @@ Panel content
 <ul>
 <li>checked:是否选中</li>
 </ul>
+</li>
+<li>
+  <input type="checkbox" >
 </li>
 </ul>
 <hr />
@@ -496,6 +575,9 @@ Panel content
 
 </li>
 <li>属性：无</li>
+<li>
+  <iframe src="togglebutton.html" style="height:90px;"></iframe>
+</li>
 </ul>
 <hr />
 <h3>date time picker</h3>
@@ -503,7 +585,7 @@ Panel content
 <li>用途：选择日期</li>
 <li>
 <p>代码示例：</p>
-<pre><code>&lt;input type=&quot;datetime&quot;&gt;
+<pre><code>&lt;input type=&quot;date&quot;&gt;
 </code></pre>
 
 </li>
@@ -512,6 +594,9 @@ Panel content
 <ul>
 <li>type:date/month/week/time/datetime/datetime-local</li>
 </ul>
+</li>
+<li>
+  <input type="date">
 </li>
 </ul>
 <hr />
@@ -528,6 +613,12 @@ Panel content
 
 </li>
 <li>属性：无</li>
+<li>
+  <select>
+    <option>选项1</option>
+    <option>选项2</option>
+  </select>
+</li>
 </ul>
 <hr />
 <h3>Button</h3>
@@ -546,6 +637,9 @@ Panel content
 <li>样式</li>
 </ul>
 </li>
+<li>
+  <button type="button" class="btn">Click</button>
+</li>
 </ul>
 <hr />
 <h3>Image</h3>
@@ -563,11 +657,14 @@ Panel content
 <li>一些预设样式</li>
 </ul>
 </li>
+<li>
+  <img src="img.png" alt="..." class="img-rounded">
+</li>
 </ul>
 <hr />
 <h3>Icons</h3>
 <ul>
-<li>用途：小图标，用于形象的表明操作意图。交流行的方式是使用web font实现。</li>
+<li>用途：小图标，用于形象的表明操作意图。较流行的方式是使用web font实现。</li>
 <li>
 <p>代码示例：</p>
 <pre><code>&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;
@@ -578,12 +675,18 @@ Panel content
 <p>属性：无  
 </p>
 </li>
+<li>
+  <span class="glyphicon glyphicon-search"></span> ←_←左边是图标
+</li>
 </ul>
 <hr />
 <h3>Modal Dialog</h3>
 <ul>
 <li>用途：弹出窗口，用于提示信息或收集少量用户输入</li>
 <li>代码示例:根据使用的ui库不同而不同，一般是页面用带样式的div定义对话框ui，使用ui库js方法弹出。</li>
+<li>
+  <button class="btn btn-info" data-toggle="modal" data-target="#myModal">open dialog</button>
+</li>
 </ul>
 <hr />
 <h3>Animation</h3>
@@ -591,6 +694,25 @@ Panel content
 <li>用途：各种动画，应用于元素显隐，页面切换或组件切换时的效果。</li>
 <li>代码示例：移动端可使用css3动画实现或其他javascript库</li>
 </ul>
+
+<!--modal dialog -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 </body>
 </html>
